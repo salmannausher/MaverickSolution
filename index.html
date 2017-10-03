@@ -22,26 +22,7 @@
     <link rel="shortcut icon" href="favicon.png">
     <!-- Start of Async Drift Code -->
 <script>
-!function() {
-  var t;
-  if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
-  t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
-  t.factory = function(e) {
-    return function() {
-      var n;
-      return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-    };
-  }, t.methods.forEach(function(e) {
-    t[e] = t.factory(e);
-  }), t.load = function(t) {
-    var e, n, o, i;
-    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
-    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
-    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-  });
-}();
-drift.SNIPPET_VERSION = '0.3.1';
-drift.load('fpk227t2vpsf');
+
 </script>
 <!-- End of Async Drift Code -->
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
@@ -389,7 +370,8 @@ Focused towards providing high performance, low cost and accurate results throug
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
-    <script src="js/jquery.scrollTo.min.js"></script>
+      <script src="js/jquery.sticky.js"></script>
+    <script src="js/drift.js"></script>
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh107KIN5W8ooiWS8iqg1npLHhK-ozztQ"></script> -->
     <!-- to use it on your site, change API key for Google Maps -->
     <script src="js/gmaps.js"></script>
